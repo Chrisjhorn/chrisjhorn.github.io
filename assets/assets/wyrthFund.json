@@ -1,0 +1,34 @@
+{
+  "WyrthFund" : [
+     {
+      "data" : {
+        "valuation"     : {
+        "title"        : "Valuation",
+        "plotData"     : [
+                     ["Jan", 500000.0],
+                     ["Feb", 750000.0],
+                     ["Mar", 1000000.0],
+                     ["Apr", 1500000.0],
+                     ["May", 1750000.0],
+                     ["Jun", 2000000.0],
+                     ["Jul", 2500000.0],
+                     ["Aug", 3000000.0],
+                     ["Sep", 3500000.0],
+                     ["Oct", 380000.0],
+                     ["Nov", 430000.0],
+                     ["Dec", 5000000.0]
+                  ]
+      },
+      "composition"     : {
+        "title"        : "Portfolio",
+        "plotData"     : [
+                     ["CleanWater", 1500000.0],
+                     ["Renewable", 1500000.0],
+                     ["SchoolFood", 1250000.0],
+                     ["Other", 750000.0]
+                  ]
+      }
+     }
+    }
+ ]
+}

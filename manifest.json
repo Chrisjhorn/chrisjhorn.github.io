@@ -1,6 +1,6 @@
 {
-    "name": "swipeable1",
-    "short_name": "swipeable1",
+    "name": "wyrth_web",
+    "short_name": "wyrth_web",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
