@@ -1,0 +1,29 @@
+Changing current working directory to: /Users/chrishorn/WYRTH/flutterApps/wyrth_v2
+
+💪 Building with sound null safety 💪
+
+Compiling lib/main.dart for the Web...                          
+Target dart2js failed: Exception: lib/common/common.dart:25:66:
+Error: Place positional arguments before named arguments.
+        : Center(child: SizedBox(width: 390, height: 600, /*844*/, child: w)))
+                                                                 ^
+lib/common/common.dart:25:66:
+Error: Expected an identifier, but got ','.
+        : Center(child: SizedBox(width: 390, height: 600, /*844*/, child: w)))
+                                                                 ^
+lib/common/common.dart:25:66:
+Error: Expected named argument.
+        : Center(child: SizedBox(width: 390, height: 600, /*844*/, child: w)))
+                                                                 ^
+lib/common/common.dart:25:33:
+Error: No named parameter with the name '#2'.
+        : Center(child: SizedBox(width: 390, height: 600, /*844*/, child: w)))
+                                ^^
+../../flutter/packages/flutter/lib/src/widgets/basic.dart:2273:9:
+Info: Found this candidate, but the arguments don't match.
+  const SizedBox({ Key? key, this.width, this.height, Widget? child })
+        ^^^^^^^^
+Error: Compilation failed.
+
+Compiling lib/main.dart for the Web...                             11.7s
+Exception: Failed to compile application for the Web.

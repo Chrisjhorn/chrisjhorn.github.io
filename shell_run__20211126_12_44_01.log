@@ -1,0 +1,13 @@
+Server started on port 8080
+2021-11-26T12:44:08.516755  0:00:00.027962 GET     [200] /
+2021-11-26T12:44:08.630738  0:00:00.000720 GET     [200] /flutter_service_worker.js?v=3453727280
+2021-11-26T12:44:08.647083  0:00:00.000417 GET     [200] /
+2021-11-26T12:44:08.648339  0:00:00.000350 GET     [200] /index.html
+2021-11-26T12:44:08.650096  0:00:00.000378 GET     [200] /main.dart.js
+2021-11-26T12:44:08.655933  0:00:00.000450 GET     [200] /assets/NOTICES
+2021-11-26T12:44:08.657343  0:00:00.000407 GET     [200] /assets/AssetManifest.json
+2021-11-26T12:44:08.665714  0:00:00.000443 GET     [200] /assets/FontManifest.json
+2021-11-26T12:44:09.018042  0:00:00.002014 GET     [304] /flutter_service_worker.js?v=3453727280
+2021-11-26T12:44:53.537037  0:00:00.000561 GET     [200] /assets/assets/campaigns/wind.png
+2021-11-26T12:44:57.168320  0:00:00.000509 GET     [200] /assets/assets/campaigns/job_losses.png
+2021-11-26T12:52:59.858783  0:00:00.000790 GET     [200] /assets/assets/campaigns/bike_lanes.png
