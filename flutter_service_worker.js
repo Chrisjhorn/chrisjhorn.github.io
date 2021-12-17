@@ -5,14 +5,17 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "994a4f54fb0dc7ed42c3e96a5e29b2e1",
 "shell_run__20211211_17_30_39.log": "2d170eea3c1409438bb16ad38a7b1b05",
-"index.html": "5182cc07b584411b829e1a73ba0e5869",
-"/": "5182cc07b584411b829e1a73ba0e5869",
+"index.html": "3504ef308d0aa628a3d04d2bfbff18fd",
+"/": "3504ef308d0aa628a3d04d2bfbff18fd",
 "shell_run__20211211_17_30_02.log": "bdac14612d262be4012f5d071c543be4",
-"main.dart.js": "dc5c870726035578ede4e5ca6587d34a",
+"main.dart.js": "6234b1846864f636b5b3ea8c9b98cdcd",
 "shell_run__20211211_16_58_19.log": "8a3818f0357e7deedd22bd8faedc7943",
-"index.html.orig": "d0608326ddf66a358975a7e5874481d2",
-"shell_run__20211213_13_51_05.log": "0fe439716b2dd1414d48834531542153",
+"index.html.orig": "b1458a70ea33caf07970b2df43126672",
+"shell_run__20211213_13_51_05.log": "3afd5e9b3b868061e3a125cfae4dc5a6",
+"shell_run__20211217_12_26_31.log": "cfeee863d152246510f37ea90b0eaff4",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"shell_run__20211217_12_24_13.log": "91addb356ff43434fc69ea088afad1c6",
+"shell_run__20211217_12_23_37.log": "1dadf0469e66bb7a8a303cec9418aae6",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
@@ -71,7 +74,8 @@ const RESOURCES = {
 "assets/assets/campaigns/coastal.png": "3564fb8ef85c3ea42215d57dfbab1ab8",
 "assets/assets/campaigns/floods.png": "b3fb9861b6bb3892293f8c16ff954a46",
 "assets/assets/campaigns/pollution.png": "c57efae81acf52c430df13aac078eda1",
-"assets/assets/campaigns/bus.png": "b5b4eb134cf4431aae961e21de479ade"
+"assets/assets/campaigns/bus.png": "b5b4eb134cf4431aae961e21de479ade",
+"shell_run__20211213_13_51_44.log": "97d841c644fc18d59a806d49c8b05485"
 };
 
 // The application shell files that are downloaded before a service worker can
