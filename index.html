@@ -23,26 +23,29 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="wyrth_v2">
+  <meta name="apple-mobile-web-app-title" content="wyrth_v3">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>wyrth_v2</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>wyrth_v3</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
    
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9MDli4UgFQtAOknbdv2nEkzYaUuGV5c"></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9MDli4UgFQtAOknbdv2nEkzYaUuGV5c"></script> -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <!-- Firebase Configuration -->
     <script>
     var firebaseConfig = {
-        apiKey: "AIzaSyC8BXWPMrOiM11uHasqNpipPtIHJiHoPGc",
-        authDomain: "wyrth-v2.firebaseapp.com",
-        databaseURL: "https:wyrth-v2.firebaseio.com",
-        projectId: "wyrth-v2",
-        storageBucket: "wyrth-v2.appspot.com",
-        appId: "1:462685174945:web:75526e922fbb4612ce84e0",
+        apiKey: "AIzaSyD-qCN0QxC8-i4ddcVeEmUyJ2GxLj_om-c",
+        authDomain: "wyrth-v3.firebaseapp.com",
+        databaseURL: "https:wyrth-v3.firebaseio.com",
+        projectId: "wyrth-v3",
+        storageBucket: "wyrth-v3.appspot.com",
+        appId: "1:734293196029:web:4d7a6b32d935ddca4b1294",
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -51,7 +54,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '3818817580';
+    var serviceWorkerVersion = '1898692308';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
