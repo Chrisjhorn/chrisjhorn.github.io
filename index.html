@@ -23,134 +23,54 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="wyrth_v3">
+  <meta name="apple-mobile-web-app-title" content="wyrth_v4">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>wyrth_v3</title>
+  <title>wyrth_v4</title>
   <link rel="manifest" href="manifest.json">
 
-<style>
-    body {
-      height: 500vh !important;  /* Bigger than 100% to allow scroll */
-      position: static !important;  /* Override absolute from flutter */
-      overflow-y: scroll !important; /* Allows verticall scrolling */
-      overflow-x: hidden !important;
-      touch-action: pan-y !important;  /* Allows vertical scrolling */
-      overscroll-behavior: none; /* Avoid bouncing scrolling on top/bottom edget */
-    }
-
-     /* Centers flutter canvas with a size of the viewport*/
-    flt-glass-pane {
-      position: fixed !important; /* Overrides absolute from flutter  */
-      top: 50vh  !important;
-      left: 50vw  !important;
-      max-width: 100vw  !important;
-      max-height: 100vh  !important;
-      transform: translate(-50vw, -50vh)  !important;
-    }
-
-    /* 
-    Scrollbar hide doesn't work on iOS, they add a default one when overflow:true and  -webkit-overflow-scrolling: touch; 
-    Sadly since iOS 13, this value is forced on iOS -> https://developer.apple.com/documentation/safari-release-notes/safari-13-release-notes
-    */
-    ::-webkit-scrollbar {
-      display: false;
-      width: 0px;
-      height: 0px;  /* Remove scrollbar space */
-      background: transparent;  /* Optional: just make scrollbar invisible */
-    }
-    
-  </style>
-
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '1140957633';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
 <body>
    
-   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9MDli4UgFQtAOknbdv2nEkzYaUuGV5c"></script> -->
+   <!-- UNUSED <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9MDli4UgFQtAOknbdv2nEkzYaUuGV5c"></script> END-UNUSED -->
         <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <!-- Firebase Configuration -->
     <script>
     var firebaseConfig = {
-        apiKey: "AIzaSyD-qCN0QxC8-i4ddcVeEmUyJ2GxLj_om-c",
-        authDomain: "wyrth-v3.firebaseapp.com",
-        databaseURL: "https:wyrth-v3.firebaseio.com",
-        projectId: "wyrth-v3",
-        storageBucket: "wyrth-v3.appspot.com",
-        appId: "1:734293196029:web:4d7a6b32d935ddca4b1294",
+        apiKey: "AIzaSyAT3hdkxFq-MRQ0BobCWQ6VOLfeokrX3nA",
+        authDomain: "wyrth-v4.firebaseapp.com",
+        databaseURL: "https:wyrth-v4.firebaseio.com",
+        projectId: "wyrth-v4",
+        storageBucket: "wyrth-v4.appspot.com",
+        appId: "1:348890297250:ios:b90e02d05108f7f94f38fb",
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     </script>
-      <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '766000185';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
-
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
+      <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
       });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
+    });
   </script>
 </body>
 </html>
