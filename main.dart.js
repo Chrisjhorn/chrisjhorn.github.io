@@ -13640,7 +13640,7 @@ _.d=d
 _.e=e
 _.f=f},
 a04:function a04(){},
-pK(a,b,c,d,e){return new A.u5(a,c,e,b,d,null)},
+pK(a,b,c,d,e,f){return new A.u5(a,c,e,b,d,f,null)},
 yU(a){var s=a.ov(t.Np)
 if(s!=null)return s
 throw A.c(A.xa(A.a([A.oL("Scaffold.of() called with a context that does not contain a Scaffold."),A.bL("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.Ds(u.G),A.Ds("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.Uf("The context used was")],t.F)))},
@@ -13737,13 +13737,14 @@ _.b=c
 _.c=null},
 awJ:function awJ(a,b){this.a=a
 this.b=b},
-u5:function u5(a,b,c,d,e,f){var _=this
+u5:function u5(a,b,c,d,e,f,g){var _=this
 _.e=a
 _.f=b
 _.Q=c
 _.ch=d
 _.CW=e
-_.a=f},
+_.cy=f
+_.a=g},
 yT:function yT(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p){var _=this
 _.d=a
 _.e=b
@@ -25827,7 +25828,7 @@ if(f){n=A.a([A.fa(s,10,s)],o)
 if(q.b==null)n.push(A.Y(s,A.bJ(A.a([A.vb(A.ez(B.eR,new A.l(r),s),A.Z("You are not currently logged in",s,s,s,s,s,s),new A.ary(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330))
 if(q.b!=null)n.push(A.b9(A.a([A.Y(s,A.bJ(A.a([A.vb(A.ez(B.eR,new A.l(r),s),A.Z("Close",s,s,s,s,s,s),new A.arz(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.oN,new A.l(r),s),A.Z("Home Screen",s,s,s,s,s,s),new A.arA(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.oR,new A.l(r),s),A.Z("Your activity",s,s,s,s,s,s),new A.arB(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.oK,new A.l(r),s),A.Z("Browse Users & Campaigns",s,s,s,s,s,s),new A.arC(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.oQ,new A.l(r),s),A.Z("Search Users & Campaigns",s,s,s,s,s,s),new A.arD(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.ia,new A.l(r),s),A.Z("Your profile",s,s,s,s,s,s),new A.arE(a,q))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330),A.Y(s,A.bJ(A.a([A.vb(A.ez(B.oO,new A.l(r),s),A.Z("Logout of the app",s,s,s,s,s,s),new A.arF(a))],o),B.u,B.F,B.ba),B.e,s,s,s,s,s,s,s,s,s,330)],o),B.q,B.b9,B.k))
 o=A.Y(s,new A.PU(A.Y(s,A.agM(n,B.T),B.e,s,s,new A.bZ(B.ce,s,s,s,s,s,B.H),s,s,s,s,s,s,s),s),B.e,s,s,s,s,350,s,s,s,s,300)}else o=s
-o=A.pK(p,B.ce,A.fv(!0,A.Y(s,new A.bb(new A.aB(10,20,10,5),A.Y(s,c,B.e,s,s,new A.bZ(new A.l(4294967295),s,s,s,s,s,B.H),s,s,s,s,s,s,s),s),B.e,s,s,new A.bZ(B.ce,s,s,s,s,s,B.H),s,s,s,s,s,s,s),new A.aB(10,10,10,10),!0),A.b4p(a,d),o)
+o=A.pK(p,B.ce,A.fv(!0,A.Y(s,new A.bb(new A.aB(10,20,10,5),A.Y(s,c,B.e,s,s,new A.bZ(new A.l(4294967295),s,s,s,s,s,B.H),s,s,s,s,s,s,s),s),B.e,s,s,new A.bZ(B.ce,s,s,s,s,s,B.H),s,s,s,s,s,s,s),new A.aB(10,10,10,10),!0),A.b4p(a,d),o,!0)
 p=o
 return p},
 ary:function ary(a){this.a=a},
@@ -56564,8 +56565,8 @@ ac3(){var s,r=this.c
 r.toString
 s=A.Tt(r)
 if(s!=null&&s.d.length!==0)s.k9(0,B.Fy,B.eK)},
-gnT(){this.a.toString
-return!0},
+gnT(){var s=this.a.cy
+return s!==!1},
 ar(){var s,r=this,q=null
 r.aP()
 s=r.c
@@ -90383,7 +90384,7 @@ $1(a){return new A.zV(null)},
 $S:580}
 A.a5i.prototype={
 $1(a){var s=null
-return A.pK(A.a59(s,s,s,s,s,A.Z("Error in Route..",s,s,s,s,s,s),s),s,A.fv(!0,A.av(A.Z("No such route '"+this.a+"'",s,s,s,s,s,s),s,s),B.T,!0),s,s)},
+return A.pK(A.a59(s,s,s,s,s,A.Z("Error in Route..",s,s,s,s,s,s),s),s,A.fv(!0,A.av(A.Z("No such route '"+this.a+"'",s,s,s,s,s,s),s,s),B.T,!0),s,s,s)},
 $S:581}
 A.ty.prototype={
 gAT(){var s=this.d
@@ -91095,12 +91096,12 @@ $S:68}
 A.r5.prototype={
 a0(){return new A.Xm(B.j)}}
 A.Xm.prototype={
-K(a){var s=t.l
-a.L(s).toString
-a.L(s).toString
+K(a){var s=null,r=t.l
+a.L(r).toString
+a.L(r).toString
 A.cm(a,!0,t.d)
 A.x("CampaignSummariesScreen build...")
-return A.pK(null,new A.l(4293848551),A.fv(!0,A.mP(a,J.at(this.a.c,0),A.b4y(),this.a.c,A.b4z(),"Campaign"),new A.aB(30,50,30,0),!0),null,null)}}
+return A.pK(s,new A.l(4293848551),A.fv(!0,A.mP(a,J.at(this.a.c,0),A.b4y(),this.a.c,A.b4z(),"Campaign"),new A.aB(30,50,30,0),!0),s,s,s)}}
 A.aEC.prototype={
 $0(){return A.bm(this.a,!1).fg(this.b,this.c,t.X)},
 $S:0}
@@ -91756,7 +91757,7 @@ K(a){var s=null,r=t.l
 a.L(r).toString
 a.L(r).toString
 A.cm(a,!0,t.d)
-return A.pK(s,new A.l(4281080974),A.fv(!0,A.b9(A.a([new A.aY(1,B.p,A.Y(s,A.Z("Ready to jump in?",s,s,s,A.aM(s,s,new A.l(4294967295),s,s,s,s,s,s,s,s,A.P(a).RG.f.r,s,s,s,s,0.95,!0,s,s,s,s,s,s,s,s),B.aA,s),B.e,s,s,s,s,s,s,s,s,s,s),s),new A.aY(2,B.p,A.Y(s,A.av(A.av(A.Z("The first fifty is on us. We'll add $50 when you invest $100 or more in your first campaign.",s,s,s,A.aM(s,s,new A.l(4294822942),s,s,s,s,s,s,s,s,A.P(a).RG.f.r,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),B.V,s),s,s),s,s),B.e,s,s,s,s,s,s,s,s,s,s),s),new A.aY(3,B.p,A.Y(s,A.av(A.Y(s,s,B.e,s,s,new A.bZ(s,A.l5(s,B.c8,new A.iZ("assets/gift_10.png",s,s),s),s,s,s,s,B.H),s,1/0,s,s,s,s,1/0),s,s),B.e,s,s,new A.bZ(B.fn,s,s,s,s,s,B.H),s,s,s,s,s,s,s),s),A.la(A.Y(s,new A.f0(B.a6,s,s,A.fO(B.ZR,s,new A.adp(a),s),s),B.e,s,s,s,s,s,s,s,s,s,s),1)],t.p),B.q,B.C,B.k),new A.aB(30,100,30,0),!0),s,s)}}
+return A.pK(s,new A.l(4281080974),A.fv(!0,A.b9(A.a([new A.aY(1,B.p,A.Y(s,A.Z("Ready to jump in?",s,s,s,A.aM(s,s,new A.l(4294967295),s,s,s,s,s,s,s,s,A.P(a).RG.f.r,s,s,s,s,0.95,!0,s,s,s,s,s,s,s,s),B.aA,s),B.e,s,s,s,s,s,s,s,s,s,s),s),new A.aY(2,B.p,A.Y(s,A.av(A.av(A.Z("The first fifty is on us. We'll add $50 when you invest $100 or more in your first campaign.",s,s,s,A.aM(s,s,new A.l(4294822942),s,s,s,s,s,s,s,s,A.P(a).RG.f.r,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),B.V,s),s,s),s,s),B.e,s,s,s,s,s,s,s,s,s,s),s),new A.aY(3,B.p,A.Y(s,A.av(A.Y(s,s,B.e,s,s,new A.bZ(s,A.l5(s,B.c8,new A.iZ("assets/gift_10.png",s,s),s),s,s,s,s,B.H),s,1/0,s,s,s,s,1/0),s,s),B.e,s,s,new A.bZ(B.fn,s,s,s,s,s,B.H),s,s,s,s,s,s,s),s),A.la(A.Y(s,new A.f0(B.a6,s,s,A.fO(B.ZR,s,new A.adp(a),s),s),B.e,s,s,s,s,s,s,s,s,s,s),1)],t.p),B.q,B.C,B.k),new A.aB(30,100,30,0),!0),s,s,s)}}
 A.adp.prototype={
 $0(){return A.bm(this.a,!1).d6("/register_alternatives",t.X)},
 $S:0}
@@ -91811,12 +91812,12 @@ q=A.b4t(a,r.c,n,J.bU(s))
 n=r.d>>>0
 n=A.a([B.G,new A.l(n),new A.l(n),B.G],t.t_)
 p=A.a([0,0.1,0.9,1],t.v)
-return A.Y(o,A.pK(o,B.S,A.fv(!0,A.b9(q,B.q,B.dR,B.k),new A.aB(30,100,30,0),!0),o,o),B.e,o,o,new A.bZ(o,o,o,o,o,new A.p6(B.n0,B.n_,B.cy,n,p,o),B.H),o,o,o,o,o,o,o)}}
+return A.Y(o,A.pK(o,B.S,A.fv(!0,A.b9(q,B.q,B.dR,B.k),new A.aB(30,100,30,0),!0),o,o,o),B.e,o,o,new A.bZ(o,o,o,o,o,new A.p6(B.n0,B.n_,B.cy,n,p,o),B.H),o,o,o,o,o,o,o)}}
 A.xG.prototype={
 K(a){var s,r=null
 A.x("IntroBundle build...")
 s=A.a([new A.rX(10,r)],t.p)
-return A.pK(r,r,A.av(new A.FB(this.c,!0,A.aOb(s,!0,!0,!0),r),r,r),r,r)}}
+return A.pK(r,r,A.av(new A.FB(this.c,!0,A.aOb(s,!0,!0,!0),r),r,r),r,r,r)}}
 A.xH.prototype={
 K(a){var s,r=null,q=t.l
 a.L(q).toString
@@ -92197,7 +92198,7 @@ a0(){return new A.ZD(B.j)}}
 A.ZD.prototype={
 K(a){var s=4293848551,r=null,q=A.cm(a,!0,t.d),p=A.aMT(),o=q.c
 A.x("LogOut screen build...")
-return A.pK(A.a59(r,new A.l(s),r,r,new A.dg(B.o,r,r,r),r,r),new A.l(s),A.wa(A.fv(!0,A.b9(A.a([A.av(A.fO(A.Z("Log out",r,r,r,r,r,r),r,new A.ayo(o,q,a),r),r,r)],t.p),B.q,B.dR,B.k),new A.aB(10,10,10,10),!0),new A.ayp(p),t.wt),r,r)}}
+return A.pK(A.a59(r,new A.l(s),r,r,new A.dg(B.o,r,r,r),r,r),new A.l(s),A.wa(A.fv(!0,A.b9(A.a([A.av(A.fO(A.Z("Log out",r,r,r,r,r,r),r,new A.ayo(o,q,a),r),r,r)],t.p),B.q,B.dR,B.k),new A.aB(10,10,10,10),!0),new A.ayp(p),t.wt),r,r,r)}}
 A.ayp.prototype={
 $1(a){return this.a},
 $S:214}
@@ -92274,7 +92275,7 @@ $1(a){return this.a.e.Q},
 $S:657}
 A.By.prototype={
 K(a){var s=null
-return A.pK(A.a59(s,s,s,s,s,B.ZN,s),s,A.fv(!0,A.av(A.fO(B.ZO,s,new A.aFN(a),s),s,s),B.T,!0),s,s)}}
+return A.pK(A.a59(s,s,s,s,s,B.ZN,s),s,A.fv(!0,A.av(A.fO(B.ZO,s,new A.aFN(a),s),s,s),B.T,!0),s,s,s)}}
 A.aFN.prototype={
 $0(){A.bm(this.a,!1).lI(null)},
 $S:0}
@@ -92377,7 +92378,7 @@ A.tQ.prototype={
 a0(){return new A.a0a(new A.bR(null,t.am),B.j)}}
 A.a0a.prototype={
 K(a){var s=null
-return A.pK(s,s,this.afF(a),s,s)},
+return A.pK(s,s,this.afF(a),s,s,s)},
 afF(a){var s=t.l
 a.L(s).toString
 a.L(s).toString
