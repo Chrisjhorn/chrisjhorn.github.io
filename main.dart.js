@@ -27590,7 +27590,7 @@ throw A.c(new A.a_J(r))}},
 aNp(a){var s=0,r=A.E(t.N),q,p,o,n
 var $async$aNp=A.A(function(b,c){if(b===1)return A.B(c,r)
 while(true)switch(s){case 0:o=t.N
-n=A.N(["Host",a,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate, br","Connection","keep-alive","Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Content-Type","Access-Control-Allow-Methods","GET,PUT,POST,DELETE"],o,o)
+n=A.N(["Host",a,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate, br","Connection","keep-alive"],o,o)
 o=t.z
 A.p("Plaid_http::getLinkToken contacting http://"+a+"/api/create_link_token..")
 s=3
