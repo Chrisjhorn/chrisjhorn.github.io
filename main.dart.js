@@ -99177,7 +99177,7 @@ kA(a){A.p("DataService::setCurrentUser to "+(a==null?"'NULL'":"'"+a.c+"' with do
 this.b=a}}
 A.y9.prototype={
 G(a){var s,r,q=null
-A.p("DataServiceScreen build:: Wyrth v5.84 at "+A.aQm("hh:mm:ss",q).dm(0,new A.cF(Date.now(),!1)))
+A.p("DataServiceScreen build:: Wyrth v5.85 at "+A.aQm("hh:mm:ss",q).dm(0,new A.cF(Date.now(),!1)))
 s=t.kL
 r=t.sK
 return A.dW(a,!0,q,q,q,A.t3(q,A.nh(new A.adp(),s,r),q,new A.adq(),s,r),!0,q,!1,"Initialise",!1,q,!1,q,!1,q,q)}}
@@ -100327,7 +100327,7 @@ A.p("AuthService:: setting up firebaseUserStream...")
 r=s.a
 r=r.aiR(r.gox().jX())
 q=A.a([A.xA(o,new A.anU(p),t.kL),A.xA(o,new A.anV(p),t.Q2),A.xA(o,new A.anW(p),t.h6),A.xA(o,new A.anX(p),t.wt),A.xA(o,new A.anY(p),t.xw),A.xA(o,new A.anZ(p),t.a4)],t.uJ)
-q=A.ba3(A.b96(new A.EC(B.a6B,B.Ji,p.c.gavk(),"Wyrth v5.84",!1,o),q),new A.ao_(p),t.d)
+q=A.ba3(A.b96(new A.EC(B.a6B,B.Ji,p.c.gavk(),"Wyrth v5.85",!1,o),q),new A.ao_(p),t.d)
 return new A.Kb(new A.x8(new A.fr(s.gach(),r,r.$ti.h("fr<bb.T,l3?>")),o,A.bf6(o,o,t.PT),t.pi),o,o,q,o,t.DN)}}
 A.ao_.prototype={
 $1(a){return this.a.e},
@@ -101047,7 +101047,7 @@ A.aKp.prototype={
 $0(){A.p("Player is ready.")},
 $S:0}
 A.L0.prototype={
-W(){return new A.a7u("Web Access v5.84",new A.bg(null,t.am),B.k)}}
+W(){return new A.a7u("Web Access v5.85",new A.bg(null,t.am),B.k)}}
 A.a7u.prototype={
 VW(){var s=this
 s.a0(new A.aKd(s,s.w==="Inisheer"?null:"You've got the wrong password!..."))
