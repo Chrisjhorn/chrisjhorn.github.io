@@ -27594,7 +27594,7 @@ n=A.N(["Host",a,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate
 o=t.z
 A.p("Plaid_http::getLinkToken contacting http://"+a+"/api/create_link_token..")
 s=3
-return A.L(A.G4("http://"+a+"/api/create_link_token",A.t(o,o),n),$async$aNp)
+return A.L(A.G4("https://"+a+"/api/create_link_token",A.t(o,o),n),$async$aNp)
 case 3:p=c
 if(!p.gBR()){A.p("Plaid_http::getLinkToken got ok response..")
 q=J.av(p.gCb(p),"link_token")
