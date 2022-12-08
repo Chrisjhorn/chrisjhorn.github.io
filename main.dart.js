@@ -27613,7 +27613,7 @@ while(true)switch(s){case 0:o=t.N
 n=A.N(["Host",b,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate, br","Connection","keep-alive"],o,o)
 o=t.z
 s=3
-return A.L(A.G4("http://"+b+"/api/set_access_token",A.N(["public_token",a],o,o),n),$async$aNm)
+return A.L(A.G4("https://"+b+"/api/set_access_token",A.N(["public_token",a],o,o),n),$async$aNm)
 case 3:p=d
 if(!p.gBR()){q=A.a([J.av(p.gCb(p),"access_token"),J.av(p.gCb(p),"item_id")],t.s)
 s=1
@@ -27627,7 +27627,7 @@ aNo(a,b){var s=0,r=A.E(t.G),q,p,o
 var $async$aNo=A.A(function(c,d){if(c===1)return A.B(d,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.L(A.Un("http://"+b+"/api/identity",A.N(["Host",b,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate, br","Connection","keep-alive"],p,p)),$async$aNo)
+return A.L(A.Un("https://"+b+"/api/identity",A.N(["Host",b,"User-Agent",u.p,"Accept","*/*","Accept-Encoding","gzip, deflate, br","Connection","keep-alive"],p,p)),$async$aNo)
 case 3:o=d
 if(!o.gBR()){q=o.gCb(o)
 s=1
@@ -99178,7 +99178,7 @@ kA(a){A.p("DataService::setCurrentUser to "+(a==null?"'NULL'":"'"+a.c+"' with do
 this.b=a}}
 A.y9.prototype={
 G(a){var s,r,q=null
-A.p("DataServiceScreen build:: Wyrth v5.86 at "+A.aQm("hh:mm:ss",q).dm(0,new A.cF(Date.now(),!1)))
+A.p("DataServiceScreen build:: Wyrth v5.88 at "+A.aQm("hh:mm:ss",q).dm(0,new A.cF(Date.now(),!1)))
 s=t.kL
 r=t.sK
 return A.dW(a,!0,q,q,q,A.t3(q,A.nh(new A.adp(),s,r),q,new A.adq(),s,r),!0,q,!1,"Initialise",!1,q,!1,q,!1,q,q)}}
@@ -100328,7 +100328,7 @@ A.p("AuthService:: setting up firebaseUserStream...")
 r=s.a
 r=r.aiR(r.gox().jX())
 q=A.a([A.xA(o,new A.anU(p),t.kL),A.xA(o,new A.anV(p),t.Q2),A.xA(o,new A.anW(p),t.h6),A.xA(o,new A.anX(p),t.wt),A.xA(o,new A.anY(p),t.xw),A.xA(o,new A.anZ(p),t.a4)],t.uJ)
-q=A.ba3(A.b96(new A.EC(B.a6B,B.Ji,p.c.gavk(),"Wyrth v5.86",!1,o),q),new A.ao_(p),t.d)
+q=A.ba3(A.b96(new A.EC(B.a6B,B.Ji,p.c.gavk(),"Wyrth v5.88",!1,o),q),new A.ao_(p),t.d)
 return new A.Kb(new A.x8(new A.fr(s.gach(),r,r.$ti.h("fr<bb.T,l3?>")),o,A.bf6(o,o,t.PT),t.pi),o,o,q,o,t.DN)}}
 A.ao_.prototype={
 $1(a){return this.a.e},
@@ -101048,7 +101048,7 @@ A.aKp.prototype={
 $0(){A.p("Player is ready.")},
 $S:0}
 A.L0.prototype={
-W(){return new A.a7u("Web Access v5.86",new A.bg(null,t.am),B.k)}}
+W(){return new A.a7u("Web Access v5.88",new A.bg(null,t.am),B.k)}}
 A.a7u.prototype={
 VW(){var s=this
 s.a0(new A.aKd(s,s.w==="Inisheer"?null:"You've got the wrong password!..."))
